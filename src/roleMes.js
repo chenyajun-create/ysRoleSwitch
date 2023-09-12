@@ -1,71 +1,28 @@
-// 头像
-const roleAvatar = [
-  'https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718344593599.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718350213870.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617000181697.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617001674227.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617005720579.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617015669833.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617025961375.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617031747812.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617033181769.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219222320482.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200315/2020031516092797889.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200330/2020033019074664412.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200724/2020072414340926231.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718352334387.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20201106/2020110614164694989.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20201216/2020121617552012082.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718290075546.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20210508/2021050817091079399.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20210825/2021082511163174110.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2023/02/06/d1bd63a9d2f41a7bfa927811e219493d_6450551595359459959.png',
-]
-// 名字
-const roleName = [
-  '琴',
-  '安柏',
-  '丽莎',
-  '凯亚',
-  '芭芭拉',
-  '迪卢克',
-  '雷泽',
-  '温迪',
-  '可莉',
-  '班尼特',
-  '诺艾尔',
-  '菲谢尔',
-  '砂糖',
-  '莫娜',
-  '迪奥娜',
-  '阿贝多',
-  '罗莎莉亚',
-  '优菈',
-  '埃洛伊',
-  '米卡',
-]
-// 背景
-const roleBackground = [
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/b51565c6f1298e534e90b6e63332e9c1_6618231443033589469.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/6f0ef40157e95b0d59455c12f4d3f270_3262958961633311108.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/43922f5162840c215638affedad0459a_154157936806604489.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/cbce61ef1ee5586c4e77b2070348685f_2873159962263599144.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/6c009f0631eb71e697c2da76b608a51e_1586187959203635452.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/f5ae62eff2cf426e98626c882dd0cf0d_3491810425996357724.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/a1594317bbd0cefeb7da501f9879375b_6718910479380394402.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/965e940e6caafe8fbd4bf0e17653000b_7797376782783229067.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/16cff1c00f651f98427fc3fbab7fc855_1013342926215826750.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219451784892.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/c8a5da498d29faa1c8f2e2bfb60efbd5_7098200614657426672.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/96297a7f2679bf0dce4fb9d11120b882_7601596078607350699.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/448bc697f852e5726717fa2be839eedc_208974302606516196.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/9e4203089ad086d328973adf3f6e8c7b_8128590565927659744.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/fb11c57bf9789d760d70d35ce634ebe1_992068999869731972.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/f95b03a7d7370aa4f5de3ac9a5f161bc_96708841112282504.png',
-  'https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718284773624.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/4c4b8babc68ffedce9bd5766b60e1ae5_8781849729625946129.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/9344fdabebf5e14d8ecaf34253d838c0_3043327248296318859.png',
-  'https://webstatic.mihoyo.com/upload/contentweb/2023/02/06/df329c62acad08953832134777166e57_5667154156652123154.png',
+//移动端激活角色背景
+const mobileActiveBac =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAACECAYAAABxhB4fAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlBMkZFNkVBNEEyMjExRTk4MDc5QTAyNDFFODZCQUU0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlBMkZFNkVCNEEyMjExRTk4MDc5QTAyNDFFODZCQUU0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUEyRkU2RTg0QTIyMTFFOTgwNzlBMDI0MUU4NkJBRTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUEyRkU2RTk0QTIyMTFFOTgwNzlBMDI0MUU4NkJBRTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5uRk1vAAAJqUlEQVR42uxd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'
+// 最外层两张若隐若现背景
+const outerBackground = [
+  [
+    'url("https://uploadstatic.mihoyo.com/contentweb/20200211/2020021114220951905.jpg")',
+    'url("https://uploadstatic.mihoyo.com/contentweb/20200211/2020021114221470532.jpg")',
+  ],
+  [
+    'url("https://uploadstatic.mihoyo.com/contentweb/20200515/2020051511072867344.jpg")',
+    'url("https://uploadstatic.mihoyo.com/contentweb/20200515/2020051511073340128.jpg")',
+  ],
+  [
+    'url("https://uploadstatic.mihoyo.com/contentweb/20210719/2021071917030766463.jpg")',
+    'url("https://uploadstatic.mihoyo.com/contentweb/20210719/2021071917033032133.jpg")',
+  ],
+  [
+    'url("https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/04d542b08cdee91e5dabfa0e85b8995e_8653892990016707198.jpg")',
+    'url("https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/ab72edd8acc105904aa50da90e4e788e_2299455865599609620.jpg")',
+  ],
+  [
+    'url("https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/34ec75c9ed70f793cdd698ad1a4764e5_731983624099835302.jpg")',
+    'url("https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/3ce8f43e9de08e1988aafc00fdff2410_8142185104639306099.jpg")',
+  ],
 ]
 
 // 左键url
@@ -103,6 +60,29 @@ const yuRoleInfo = [
       'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/4c4b8babc68ffedce9bd5766b60e1ae5_8781849729625946129.png',
       'https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/9344fdabebf5e14d8ecaf34253d838c0_3043327248296318859.png',
       'https://webstatic.mihoyo.com/upload/contentweb/2023/02/06/df329c62acad08953832134777166e57_5667154156652123154.png',
+    ],
+    roleBackgroundMobile: [
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/6d512d56ac7ee8181b6fecb8b53c8941_8592363746895730807.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/4f598572016e3177da5d4256fe9c1f5e_1557744442867799468.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620191955240.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620202827248.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200611/2020061121101514554.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200611/2020061121141739986.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20191018/2019101817221458178.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20191122/2019112214280323664.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200103/2020010311245141767.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200312/2020031219451010574.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200325/2020032510441020374.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200402/2020040210431546436.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200724/2020072414351862101.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/247b5054c574b0ff69b27dfe5d18101b_6470219706658571384.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20201106/2020110614373182565.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20201216/2020121618031766016.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/a41b9128c686df0f18008cc8d03e2710_4920953648907851390.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/2c3a966eca931163af47670403ea8e50_572264946023993509.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/07/13/8ef5a843157d2bba1073f1f15e99ab88_7931588706386910573.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2023/02/06/1e48750f7e23545246579cec4e0c1080_1151725852225497142.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/6d512d56ac7ee8181b6fecb8b53c8941_8592363746895730807.png',
     ],
     // 底部头像
     roleAvatar: [
@@ -200,6 +180,28 @@ const yuRoleInfo = [
       'https://webstatic.mihoyo.com/upload/contentweb/2023/01/13/52985680295fe1bf3b9eebbbace892f6_6333578342761288152.png',
       'https://webstatic.mihoyo.com/upload/contentweb/2023/03/22/7e0096b8907484d2c530a57a0d0bda80_5668751415157436691.png',
     ],
+    roleBackgroundMobile: [
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/f39029c2d532da642a6a26e939342cfe_7668267888802841337.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200227/2020022719265121338.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200305/2020030517210771116.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200325/2020032510405353268.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/07/13/a8aeddaeb014bd3a5c84bbdacbe5b1b6_3054506025948051259.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200602/2020060218490326606.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814231443890.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20200828/2020082814302930897.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20201103/2020110317320924240.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/07/13/f9a6207d4b412504efe924c61bb7b5a0_625236384281146493.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20201126/2020112619435577026.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20210105/2021010519112686388.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20210222/2021022211015977352.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/b59981536d706e05ef5d8074f813933e_6439062755366432729.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/1346e716a5106af1799a0689dbb447d4_8668961271770521123.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/d6dfc43ded6b12754f21ff3e1ba27c6a_697862186718976661.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/29/9f1afe08e9aa09ec4c63ad434f4de0d0_3592303725834218163.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2023/01/13/21adb9a49874e165414e47d92bbf665c_3374468202655580233.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2023/03/15/7f741e68d13763893e9765114653dbba_7502398350400780117.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/07/04/f39029c2d532da642a6a26e939342cfe_7668267888802841337.png',
+    ],
     roleAvatar: [
       'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617035787693.png',
       'https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617043374251.png',
@@ -288,6 +290,24 @@ const yuRoleInfo = [
       'https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/c20ab407d9316480290f7c690836f35c_3319365553784768994.png',
       'https://webstatic.mihoyo.com/upload/contentweb/2023/05/17/58ed3bce339f53a535cec2e64898fb77_3217290123071211657.png',
     ],
+    roleBackgroundMobile: [
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/3e70ceb4ff8af4cb953528cbe0ad978c_1194470955685479611.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20210617/2021061716261057866.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/477828c8143db56cf4bf8f4794dc366a_6087046803156614604.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/495b155d1878702b72fed652e17ae61c_1629574657043634741.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/dd1f208fdefbf57efcd4ecc2dd6db8af_5156970880804009875.png',
+      'https://uploadstatic.mihoyo.com/contentweb/20210817/2021081716222189501.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/07/15/6b5d5658498d64378f6bc3a499be1061_5403578504705848667.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/8c22510df84f59fbe30bc6e338ec01fc_1976556256075873353.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/80c603323013d50fba419fe48b049a85_7247865290932680381.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/3484c4fab13b8c8fec8ccbeff63ec50a_2509373723443337404.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/555743f86c50e014c9491740133b98d9_86760038096891571.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/24/ac3c01655e5dd24fbaad117c72d48417_2563365341162300701.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/e497caa0da05be3ef9ad4257397aac2b_62744459501155557.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/07/07/ec07d3511f0ebe503e83ef645acc333c_9141249635277351000.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2023/05/11/8eaec8a513f04167ad4b9d58ab4974ea_3160683513238986068.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/06/27/3e70ceb4ff8af4cb953528cbe0ad978c_1194470955685479611.png',
+    ],
     roleAvatar: [
       'https://uploadstatic.mihoyo.com/contentweb/20210720/2021072011085576262.png',
       'https://uploadstatic.mihoyo.com/contentweb/20210617/2021061716564818668.png',
@@ -356,6 +376,22 @@ const yuRoleInfo = [
       'https://webstatic.mihoyo.com/upload/contentweb/2023/02/03/28d4e40c6f27105a444d7477229f8ced_6061104866077771332.png',
       'https://webstatic.mihoyo.com/upload/contentweb/2023/03/15/4f486ee9943936bb8d8a8ebc9c9df9b2_964302051434856950.png',
     ],
+    roleBackgroundMobile: [
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/08/19/b00b62e3b4f10026bfa95bc07896bbd7_518334801982746846.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/2466e194064e0306c4290a252269593c_6971889188293824681.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/08/29/2cff1eeb6d74ff8e00813614cb9d7635_8159732657421056629.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/09/21/e3bf32076e4144083d84320cda30dc82_7864338366856660301.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/09/22/c12a433c36d75fbbf77a6e7619d86cc5_2581956761641324089.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/09/27/f1da8e801b8c23e250bb2e7d23fb49d5_4425751593938721916.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/27e20ed23e1c42678538e40d93a31179_481441863813731142.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/10/20/9395372dd45888445540606a7a60ea1d_4153303946027929850.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/11/28/11975168707d46fe05531b133bf4bde9_3567713320467836276.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/12/02/cfbfca72a20d9e80e6995c27df20d4a0_266150600252788936.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2023/01/10/d3703af33a9184dcb49655262a8a084e_3548713926518165500.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2023/02/03/8b5b13ca240afcf402a1a5416bd4061d_7656859897372788472.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2023/03/15/a4d61e94a9ef987d9a90f569b3bc14f0_6707315397742196990.png',
+      'https://webstatic.mihoyo.com/upload/contentweb/2022/08/19/b00b62e3b4f10026bfa95bc07896bbd7_518334801982746846.png',
+    ],
     roleAvatar: [
       'https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/1f88bdae2e99307e68a0bbfedf6cc74f_2882938237707913291.png',
       'https://webstatic.mihoyo.com/upload/contentweb/2022/08/15/3677cbc063b7ab3887ceb7f9a77287ac_1039229097287658400.png',
@@ -407,6 +443,12 @@ const yuRoleInfo = [
       'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/aed7f3d44289e8f796c19fc4cd13ad9b_5443840253658661899.png',
       'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/631514b481df43070c5d0f06a5d07a61_6900237162378067835.png',
     ],
+    roleBackgroundMobile: [
+      'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/50b29ea6bbc104990541ad14d6deca77_8736374691181476295.png',
+      'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/8957ae5167e509ec0ce866295baf0a6f_2448908301710805222.png',
+      'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/75f4705aab39dedb58a3a851ccc23eb8_8198730000225818573.png',
+      'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/50b29ea6bbc104990541ad14d6deca77_8736374691181476295.png',
+    ],
     roleAvatar: [
       'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/7b47aa8ac8e2a35ae5e7d37d264dcb93_8832500935181332478.png',
       'https://act-webstatic.mihoyo.com/upload/contentweb/hk4e/c2759cdfc8206689f137d38ca5c6fe98_1943079451542028396.png',
@@ -418,18 +460,4 @@ const yuRoleInfo = [
     ],
   },
 ]
-export {
-  roleAvatar,
-  roleName,
-  roleBackground,
-  leftSwitchArrow,
-  rightSwitchArrow,
-  yuRoleInfo,
-  roleSidebar,
-  bottomRoleBac,
-}
-// 大图片
-// let arr = []
-// Array.from($0.children).forEach(item=>{arr.push(item.children[0].src)})
-// Array.from($0.children).forEach(item=>{arr.push(item.children[1].innerText)})
-// Array.from(document.querySelectorAll('.character__intro-content p')).forEach(item=>{arr.push(item.innerHTML)})
+export { leftSwitchArrow, rightSwitchArrow, yuRoleInfo, roleSidebar, bottomRoleBac, outerBackground, mobileActiveBac }
